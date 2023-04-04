@@ -1,0 +1,387 @@
+/********************/
+/* FONTS */
+/********************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: "vag";
+    src: url("../fonts/vagroundedstd-bold-webfont.woff") format('woff');
+    font-weight: bold;
+}
+/********************/
+/* GENERIC STYLING */
+/********************/
+html body{
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, label{
+    font-family: vag, serif;
+}
+
+p, a, th, td{
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+main{
+    color: #a39e9e;
+}
+
+main h2{
+    color: #514d50;
+}
+
+strong{
+    font-weight: bold;
+}
+/********************/
+/* HEADER */
+/********************/
+header{
+    background: rgba(30,35,39,0.9);
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 3em;
+}
+
+header h1{
+    padding-top: 0.3em;
+    color: #44c8f5;
+    font-size: 2rem;
+    font-weight: bold;
+    float: left;
+}
+
+header p{
+    font-family: vag, serif;
+    padding-top: 1em;
+    color: rgba(255,255,255,0.7);
+    float: right;
+}
+/********************/
+/* SECTION */
+/********************/
+section{
+    margin-left: 3rem;
+    margin-right: 15rem;
+}
+
+section p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main h2{
+    margin-left: 1.5em;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+
+label{
+    color: grey;
+}
+
+input{
+    margin-bottom: 0.7rem;
+    border: none;
+    background-color: #F8F4F4;
+    height: 3rem;
+    font-family: vag, sans-serif;
+    font-size: 1.5rem;
+    color: #a39e9e;
+}
+
+#email, #name{
+    width: 100%;
+}
+
+#ects{
+    width: 25%;
+}
+
+.button{
+    background-color: #44c8f5;
+    color: white;
+    border-radius: 5px;
+    height: 3rem;
+    padding: 0 1rem 0 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.clicked{
+    background-image: url("../media/check-white.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center left;
+    background-color: #ec008c;
+}
+
+.semesters{
+    display: flex;
+}
+
+.semesters p{
+    font-family: vag, sans-serif;
+    background-color: #F8F4F4;
+    font-weight: bold;
+    padding: 0.4rem;
+    margin-right: 0.6rem;
+}
+
+.semesters .selected{
+    background-image: url("../media/check.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 0 0;
+    color: #F8F4F4;
+    background-color: yellowgreen;
+}
+
+.sort{
+    text-align: right;
+}
+
+/* CARDS - COURSES */
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 25%;
+    margin: 0.2rem;
+    background-color: #F8F4F4;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.course{
+    margin-top: 0.4rem;
+    padding: 4rem;
+    margin-bottom: 1rem;
+}
+
+.course h2{
+    margin-left: 0; !important;
+}
+
+.card-list a{
+    font-size: 1.2rem;
+    font-family: vag, sans-serif;
+    color: white;
+}
+
+.button p{
+    padding-top: 1rem;
+}
+
+.right{
+    float: right;
+}
+
+.card-ects{
+    border-style: dashed;
+    border-width: 2px;
+    padding: 1rem;
+    border-radius: 100px;
+    width: 25%;
+    margin: auto;
+}
+
+/* POINTS */
+
+.points{
+    background-image: url("../media/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    display: flex;
+}
+
+.flex{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-family: vag, sans-serif;
+}
+
+.number{
+    font-size: 3em;
+}
+
+.completed{
+    color: #44c8f5;
+}
+
+.desired{
+    color: #ec008c;
+}
+
+/* TABLE */
+.tables{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+table{
+    margin-bottom: 3rem;
+    width: 50%;
+    text-align: center;
+}
+
+tr{
+    height: 2.5rem;
+}
+
+tr td:first-child{
+    text-align: right;
+}
+
+th, tfoot td{
+    font-weight: bold;
+}
+
+td, th{
+    padding-top: 0.7rem;
+    vertical-align: center;
+}
+
+/* TABLE - PINK */
+.pink-table thead, .pink-table tfoot{
+    background-color: #ec008c;
+    color: white;
+}
+
+.pink-table .color2{
+    background-color: rgba(236,0,140,0.1);
+}
+/* TABLE - PINK */
+.blue-table thead, .blue-table tfoot{
+    background-color: rgba(60,200,245,0.3);
+}
+
+.blue-table .color1{
+    background-color: rgba(60,200,245,0.1);
+}
+
+.blue-table .color2{
+    background-color: rgba(60,200,245,0.2);
+}
+
+/********************/
+/* FOOTER */
+/********************/
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 1.5rem 0 1.5rem 0;
+    color: #F8F4F4;
+}
+
+/********************/
+/* ICONS */
+/********************/
+.curriculum{
+    background: url("../media/curriculum.svg");
+}
+
+.personal{
+    background: url("../media/personal-data.svg");
+}
+
+.select{
+    background: url("../media/completed-courses.svg");
+}
+
+.configure{
+    background: url("../media/new-courses.svg");
+}
+
+.overview{
+    background: url("../media/overview.svg");
+}
+
+.end{
+    background: url("../media/thank-you.svg");
+}
+
+.curriculum, .personal, .select, .configure, .overview, .end{
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+/********************/
+/* ASIDE */
+/********************/
+.content{
+    display: flex;
+}
+
+aside{
+    padding-right: 3rem;
+    padding-left: 3rem;
+    text-align: center;
+    margin-top: 2%;
+    width: 15%;
+    background-color: #44c8f5;
+    color: #F8F4F4;
+}
+
+aside .ects{
+    margin: 1rem 0 1rem 0;
+    font-size: 0.9rem;
+}
+aside .progress .orange{
+    height: 1rem;
+}
+
+aside .progress{
+    margin-bottom: 2rem;
+    font-size: 0.7rem;
+}
+aside h2{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.toggle{
+    display: none;
+}
+
+/********************/
+/* Gradient classes */
+/********************/
+.green {
+    background: linear-gradient(135deg, rgba(210, 255, 82, 1) 0%, rgba(210, 255, 82, 1) 24%, rgba(145, 232, 66, 1) 100%);
+}
+
+.yellow {
+    background: linear-gradient(135deg, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+}
+
+.pink {
+    background: linear-gradient(135deg, rgba(250, 160, 236, 1) 0%, rgba(242, 61, 148, 1) 100%);
+}
+
+.orange {
+    background: linear-gradient(135deg, rgba(250, 245, 160, 1) 0%, rgba(219, 85, 37, 1) 100%);
+}
+
+.blue {
+    background: linear-gradient(135deg, rgba(160, 193, 250, 1) 0%, rgba(40, 217, 240, 1) 100%);
+}
+
+.purple {
+    background: linear-gradient(135deg, rgba(235, 233, 249, 1) 0%, rgba(193, 191, 234, 1) 100%);
+}
+
+.white {
+    background: linear-gradient(135deg, rgba(204,249,251,1) 0%, rgba(255,255,255,1) 100%);
+}
